@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAEDED;
+    color: #1B1F3B;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1B1F3B;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #2C3E50;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    color: white;
+    font-size: 38px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    z-index: 1000;
+    animation: bounce 1s infinite alternate; 
+
+}
+
+
+/* Definir la animación de "salto" */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+article {
+    background-color: #BDC3C7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #1B1F3B;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2C3E50;
+}
+
+footer {
+    background-color: #1B1F3B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

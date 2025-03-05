@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page optimizada para SEO y rendimiento">
-    <meta name="keywords" content="landing page, SEO, responsive, rápido">
-    <meta name="author" content="Tu Nombre">
-    <meta property="og:title" content="Landing Page">
-    <meta property="og:description" content="Landing page optimizada para SEO y rendimiento">
-    <meta property="og:image" content="URL_DE_TU_IMAGEN">
-    <meta property="og:url" content="URL_DE_TU_SITIO">
-    <title>Landing Page</title>
+
+    <title>Abogado de ART | Juicios Laborales e Indemnizaciones</title>
+
+    <meta name="description" content="¿Sufriste un accidente laboral? Reclama tu indemnización con abogados expertos en ART. Defensa legal en juicios laborales para trabajadores.">
+    <meta name="keywords" content="Abogado de ART, indemnización, juicios laborales, accidentes laborales, ART, reclamos laborales, derechos del trabajador">
+    <meta name="author" content="Abogado de ART">
+    <meta property="og:title" content="Abogado de ART | Reclamos e Indemnizaciones">
+    <meta property="og:description" content="Defiende tus derechos con especialistas en ART. Reclama tu indemnización por accidente laboral.">
+    <meta property="og:image" content="images/abogado-art.jpg">
+    <meta property="og:url" content="https://abogadodeart.com.ar">
+    <link rel="canonical" href="https://abogadodeart.com.ar">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Bienvenido a Nuestra Landing Page</h1>
-        <p>Optimizada para velocidad, SEO y seguridad</p>
+    <header class="header-bg text-white text-center py-4">
+        <h1>Abogado de ART: Reclamos e Indemnizaciones Laborales</h1>
+        <p>Defensa legal para accidentes laborales</p>
     </header>
     
     <main class="container my-5">
+        <a href="https://wa.me/541141661995" target="_blank" class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
         <section class="text-center">
-            <h2>Sobre Nosotros</h2>
-            <p>Información breve sobre lo que ofrecemos.</p>
+            <img src="images/firma-abogado-art.jpg" alt="Firma de abogado ART" class="img-fluid mb-3">
+            <h2>¿Sufriste un accidente en el trabajo? Conocé tus derechos</h2>
+            <p>Te ayudamos a obtener la indemnización que te corresponde.</p>
+        </section>
+        
+        <section class="row mt-5">
+            <article class="col-md-4">
+                <img src="images/juicios-laborales-indemnizaciones.jpg" alt="Juicios laborales e indemnizaciones" class="img-fluid mb-2">
+                <h3>Indemnizaciones por accidentes laborales: ¿Cómo reclamar?</h3>
+                <p>Te brindamos una consulta gratuita para evaluar tu caso.</p>
+            </article>
+            <article class="col-md-4">
+                <img src="images/justicia-abogada-art.jpg" alt="Justicia y abogada ART" class="img-fluid mb-2">
+                <h3>Juicios contra ART: Defensa legal para trabajadores</h3>
+                <p>Nos encargamos de todo el proceso para que obtengas tu indemnización.</p>
+            </article>
+            <article class="col-md-4">
+                <img src="images/justicia-abogada-art-derecho.jpg" alt="Justicia y derecho en ART" class="img-fluid mb-2">
+                <h3>Resultados Comprobados</h3>
+                <p>Hemos conseguido compensaciones justas para cientos de trabajadores.</p>
+            </article>
         </section>
         
         <section id="contacto" class="mt-5">
@@ -47,31 +75,11 @@
         </section>
     </main>
     
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Tu Empresa - Todos los derechos reservados.</p>
+    <footer class="footer-bg text-white text-center py-3">
+        <img src="images/libros-derecho-art.jpg" alt="Libros de derecho ART" class="img-fluid mb-2">
+        <p>&copy; 2025 Abogado de ART - Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            let name = document.getElementById("name").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let message = document.getElementById("message").value.trim();
-            let responseMessage = document.getElementById("formResponse");
-            
-            if (name === "" || email === "" || message === "") {
-                responseMessage.textContent = "Por favor, completa todos los campos.";
-                responseMessage.classList.add("text-danger");
-                return;
-            }
-            
-            responseMessage.textContent = "Mensaje enviado con éxito.";
-            responseMessage.classList.remove("text-danger");
-            responseMessage.classList.add("text-success");
-            
-            document.getElementById("contactForm").reset();
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
