@@ -2,27 +2,42 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #EAEDED;
-    color: #1B1F3B;
+    background-color: #292728;
+    color: #F5F5F5;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1B1F3B;
-    color: white;
+    background-color: #292728;  /* Fondo gris */
+    color: #D4AF37;  /* Color dorado */
     text-align: center;
     padding: 20px 0;
 }
 
-h1, h2, h3 {
-    color: #2C3E50;
+.logo-img {
+    max-width: 120px;  /* Ajustamos el tamaño máximo del logo */
+    height: auto;      /* Mantiene las proporciones del logo */
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(212, 175, 55, 0.7), 0 0 25px rgba(212, 175, 55, 0.5);
+    margin-top: 10px;
+}
+
+h2, h3 {
+    color: #D4AF37;  /* Dorado */
 }
 
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 15px;
     background-color: #25D366;
     width: 60px; 
     height: 60px; 
@@ -30,18 +45,15 @@ h1, h2, h3 {
     align-items: center; 
     justify-content: center; 
     border-radius: 50%; 
-    color: white;
+    color: #0D0D0D;
     font-size: 38px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.5);
     transition: transform 0.3s ease;
     text-decoration: none;
     z-index: 1000;
     animation: bounce 1s infinite alternate; 
-
 }
 
-
-/* Definir la animación de "salto" */
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -53,6 +65,7 @@ h1, h2, h3 {
         transform: translateY(0);
     }
 }
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -60,24 +73,42 @@ h1, h2, h3 {
 }
 
 article {
-    background-color: #BDC3C7;
+    background-color: #1E1E1E;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+    border-left: 5px solid #D4AF37;
 }
 
 .btn-primary {
-    background-color: #1B1F3B;
+    background-color: #D4AF37;
     border: none;
+    color: #0D0D0D;
+    font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2C3E50;
+    background-color: #B7952B;
 }
 
 footer {
-    background-color: #1B1F3B;
-    color: white;
+    background-color: #292728;  /* Fondo gris */
+    color: #D4AF37;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.4rem;  /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .logo-img {
+        max-width: 100px;  /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
 }
