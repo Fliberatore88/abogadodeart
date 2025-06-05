@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alertBox.classList.remove("d-none");
     }
   
-    const articles = document.querySelectorAll(".article-cta");
+    const articles = document.querySelectorAll(".article-scroll");
     articles.forEach(article => {
       article.addEventListener("click", () => {
         document.getElementById("contacto").scrollIntoView({ behavior: "smooth" });
