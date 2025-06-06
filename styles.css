@@ -16,6 +16,11 @@ body {
     text-align: center;
     padding: 20px 0;
   }
+
+  header p {
+    margin-top: 3rem;
+    color: #cccccc;
+  }
   
   .logo-img {
     max-width: 120px;
