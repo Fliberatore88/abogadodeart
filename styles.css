@@ -6,6 +6,10 @@ body {
     padding: 0;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
   header {
     background-color: #292728;
     color: #D4AF37;
